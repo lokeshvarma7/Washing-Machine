@@ -27,26 +27,4 @@ This project implements a **Finite State Machine (FSM)** based **Washing Machine
 | `finish` | 1 bit | High when all operations are done      |
 | `error`  | 1 bit | High when water tap is not connected   |
 
-## 🚦 State Diagram (Logical Flow)
 
-  +------+
-  | IDLE |<----------------------+
-  +--+---+                       |
-     |                          |
-     v                          |
-  +--+---+        Water Tap     |
-  | WASH |--------------------->|
-  +--+---+                       |
-     |                          |
-     v                          |
-  +--+----+                     |
-  | RINSE |                     |
-  +--+----+                     |
-     |                          |
-     v                          |
-  +--+---+                      |
-  | SPIN |                      |
-  +--+---+                      |
-     |                          |
-     v                          |
- Finish=1, back to IDLE -------+
